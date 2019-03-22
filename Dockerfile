@@ -1,10 +1,10 @@
 FROM python:3.7
 
-RUN apt-get update && apt-get install unzip
-
-COPY "./requirements.txt" "/usr/src"
+RUN apt-get update && apt-get install -y unzip
 
 WORKDIR /usr/src
+
+COPY "./requirements.txt" .
 
 RUN pip install -r requirements.txt
 

@@ -39,18 +39,22 @@
    $ wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip && sudo unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/ && sudo chmod 755 /usr/local/bin/chromedriver;
    ```   
 
-## (alternative) Docker environment - with docker installed
-1. Give access to show windows run in Docker
+## (alternative) Docker environment
+1. Docker installation:
+    ```bash
+    $ ./install_docker.sh
+    ```
+2. Give access to show windows run in Docker
     ```bash
     $ xhost +local:root
     ```
 
-2. Build docker image
+3. Build docker image
     ```bash
     $ docker build -t docker_tag .
     ```
 
-3. Run docker image
+4. Run docker image
     ```bash
     $ docker run -it -v $PWD:/usr/src -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -t docker_tag bash
     ```
