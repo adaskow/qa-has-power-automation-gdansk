@@ -1,0 +1,4 @@
+behave==1.2.6
+ipdb==0.12
+ipython==7.4.0
+selenium==3.141.0
