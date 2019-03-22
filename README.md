@@ -3,6 +3,11 @@
 ## What is needed:
 ### Virtual environment configuration - recommended option
 1. Python 3 (e.g. 3.7)
+    ```bash
+    $ sudo add-apt-repository ppa:deadsnakes/ppa
+    $ sudo apt-get update
+    $ sudo apt-get install python3.7
+    ```
 2. pip:
     ```bash
     $ sudo apt install python3-pip
