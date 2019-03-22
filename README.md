@@ -1,6 +1,7 @@
 # qa-has-power-automation
 
 ## What is needed:
+### Virtual environment configuration - recommended option
 1. Python 3 (e.g. 3.7)
 2. pip:
     ```bash
@@ -39,7 +40,7 @@
    $ wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip && sudo unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/ && sudo chmod 755 /usr/local/bin/chromedriver;
    ```   
 
-## (alternative) Docker environment
+### Docker environment configuration - alternative option
 1. Docker installation:
     ```bash
     $ ./install_docker.sh
